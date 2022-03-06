@@ -8,31 +8,6 @@
   "hostname": "0.0.0.0",
   "routes": [
     {
-      "uuid": "b64ded97-11b2-4ba4-94fd-875ac156514d",
-      "documentation": "Rooms are reservation requests scheduled by a scheduler, they become executables after scheduling.",
-      "method": "get",
-      "endpoint": "room",
-      "responses": [
-        {
-          "uuid": "6fc1ce63-1b85-4ab5-92cf-b01efb2658dc",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    { \n      \"id\": \"1\",\n      \"type\": \"ROOM\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"earliestSlot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"description\": \"Testing room\",\n      \"name\": \"Testing room\",\n      \"technology\": \"PEXIP\",\n      \"state\": \"FAILED\",\n      \"isAvailable\": false,\n      \"isDeprecated\": false,\n      \"licenceCount\": 10,\n      \"usageCount\": 8\n    }\n  ]\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
-        }
-      ],
-      "enabled": true,
-      "randomResponse": false,
-      "sequentialResponse": false
-    },
-    {
       "uuid": "669ef3be-da6a-4f2c-87f7-6ab64bb1670b",
       "documentation": "Returns different parameters based on \"type\" parameter (VIRTUAL_ROOM, PHYSICAL_RESOURCE, ROOM_CAPACITY).",
       "method": "get",
@@ -89,7 +64,7 @@
       "uuid": "9df8aa67-d6b5-49f6-bc46-b1bd0afa60ac",
       "documentation": "Additional data: authorizedData (Look inside RoomController > handleListRoomData), allocation and executableState (listing all returns only overall state which you can get by calling ReservationRequestState.fromApi(reservationRequest)), childRequests - these are request made due to periodicity, history - these are requests that moidify the parent request (find more in DetailReservationRequestController > handleDetailReservationRequestTab), periodicity - repeating of reservation (look inside ReservationRequestModel)",
       "method": "get",
-      "endpoint": "reservation_request/:id",
+      "endpoint": "reservation_requests/:id",
       "responses": [
         {
           "uuid": "395bcc02-004f-455a-9858-c605cf235b3d",
@@ -114,7 +89,7 @@
       "uuid": "39239367-0554-4075-9d6a-1402e1ec5cc4",
       "documentation": "",
       "method": "delete",
-      "endpoint": "reservation_request/:id",
+      "endpoint": "reservation_requests/:id",
       "responses": [
         {
           "uuid": "c4ff0133-d589-4508-b133-451d3e01f73b",
@@ -139,7 +114,7 @@
       "uuid": "54d599e9-8f97-4684-9014-f7eee7ee811e",
       "documentation": "",
       "method": "post",
-      "endpoint": "reservation_request/:id/revert",
+      "endpoint": "reservation_requests/:id/revert",
       "responses": [
         {
           "uuid": "24b20a4b-b3f3-44f2-baae-5ac1aee5cd68",
@@ -164,7 +139,7 @@
       "uuid": "bd8588dc-a212-4ea9-b9ab-37731710ddfa",
       "documentation": "",
       "method": "get",
-      "endpoint": "reservation_request/:id/participant",
+      "endpoint": "reservation_requests/:id/participants",
       "responses": [
         {
           "uuid": "c44a6c3a-25e6-4e59-a45e-14937386a099",
@@ -189,7 +164,7 @@
       "uuid": "b4c58465-b9f0-41eb-ba50-6581afc2f92f",
       "documentation": "",
       "method": "delete",
-      "endpoint": "reservation_request/:id/participant/:participantId",
+      "endpoint": "reservation_requests/:id/participants/:participantId",
       "responses": [
         {
           "uuid": "8a640bf8-25ce-4b49-92fd-05cbb45a0bba",
@@ -214,7 +189,7 @@
       "uuid": "351a7e17-2a2e-411c-a395-3fd96ae77f4f",
       "documentation": "",
       "method": "put",
-      "endpoint": "reservation_request/:objectId/participant/:participantId",
+      "endpoint": "reservation_requests/:objectId/participants/:participantId",
       "responses": [
         {
           "uuid": "efc678c3-1502-4fa1-9fde-a81fd03cfe37",
@@ -239,7 +214,7 @@
       "uuid": "b04cb3a6-5578-44f3-b5b7-6c180b47486b",
       "documentation": "",
       "method": "get",
-      "endpoint": "reservation_request/:id/role",
+      "endpoint": "reservation_requests/:id/roles",
       "responses": [
         {
           "uuid": "83754e0c-aa58-48d0-adc5-9017c4191d2e",
@@ -264,7 +239,7 @@
       "uuid": "76ec1a20-809c-4e45-b23a-a9504ea3ca4a",
       "documentation": "",
       "method": "delete",
-      "endpoint": "reservation_request/:id/role/:identityPrincipalId",
+      "endpoint": "reservation_requests/:id/roles/:identityPrincipalId",
       "responses": [
         {
           "uuid": "3bd78613-11db-435f-b820-9e6e78d1e762",
@@ -289,7 +264,7 @@
       "uuid": "cc940f04-cf42-43d8-8dee-7ff344b3e8bf",
       "documentation": "",
       "method": "post",
-      "endpoint": "reservation_request/:id/role",
+      "endpoint": "reservation_requests/:id/roles",
       "responses": [
         {
           "uuid": "5d58dd3a-b0ba-4dcc-b262-8dd7f6742535",
@@ -314,7 +289,7 @@
       "uuid": "f346d09c-1990-40a5-b322-f0241ee77fc0",
       "documentation": "",
       "method": "get",
-      "endpoint": "reservation_request/:id/recording",
+      "endpoint": "reservation_requests/:id/recordings",
       "responses": [
         {
           "uuid": "b471a50e-9bbf-48d3-94a8-cffb98b284b1",
@@ -339,7 +314,7 @@
       "uuid": "bb9cbd5d-9b52-4358-9e19-b0ca1ee5c03d",
       "documentation": "",
       "method": "get",
-      "endpoint": "reservation_request/:id/runtime_management/participant",
+      "endpoint": "reservation_requests/:id/runtime_management/participants",
       "responses": [
         {
           "uuid": "27a7bc2f-5209-44df-a68d-9d2b0302aefd",
@@ -364,7 +339,7 @@
       "uuid": "a7bbf248-5ee0-490f-a718-dfe60dc506ca",
       "documentation": "Returns a photo of participant.",
       "method": "get",
-      "endpoint": "reservation_request/:objectId/runtime_management/participant/:participantId/snapshot",
+      "endpoint": "reservation_requests/:objectId/runtime_management/participants/:participantId/snapshot",
       "responses": [
         {
           "uuid": "82e64703-3e39-4523-9e0c-db6543568742",
@@ -389,7 +364,7 @@
       "uuid": "cee4d8f4-ad6c-4fa7-8835-bd4207acb5cf",
       "documentation": "",
       "method": "put",
-      "endpoint": "reservation_request/:objectId/runtime_management/participant/:participantId",
+      "endpoint": "reservation_requests/:objectId/runtime_management/participants/:participantId",
       "responses": [
         {
           "uuid": "75daf295-1510-4785-92aa-fa7a9faf2b9a",
@@ -414,7 +389,7 @@
       "uuid": "a2e8947d-3fed-499a-ba70-dc2ae6648fe3",
       "documentation": "",
       "method": "post",
-      "endpoint": "reservation_request/:objectId/runtime_management/participant/:participantId/disconnect",
+      "endpoint": "reservation_requests/:objectId/runtime_management/participants/:participantId/disconnect",
       "responses": [
         {
           "uuid": "1141f4b2-69a3-4e37-9d20-88f4752739d9",
@@ -439,7 +414,7 @@
       "uuid": "146be260-68d0-49d3-aa81-0aa25128c860",
       "documentation": "",
       "method": "post",
-      "endpoint": "reservation_request/:objectId/runtime_management/recording/start",
+      "endpoint": "reservation_requests/:objectId/runtime_management/recording/start",
       "responses": [
         {
           "uuid": "c6a07f12-bdf8-4098-b33b-3c71c78f046b",
@@ -464,7 +439,7 @@
       "uuid": "28f65191-11ed-46df-82b0-0c2a0aae32f1",
       "documentation": "",
       "method": "post",
-      "endpoint": "reservation_request/:objectId/runtime_management/recording/stop",
+      "endpoint": "reservation_requests/:objectId/runtime_management/recording/stop",
       "responses": [
         {
           "uuid": "46260b8a-57e2-4e75-916b-a1b3ddf4ee01",
@@ -486,60 +461,10 @@
       "sequentialResponse": false
     },
     {
-      "uuid": "e4f66f95-c031-4b0c-825f-30f5b945dc95",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "user",
-      "responses": [
-        {
-          "uuid": "64ce6cfe-ec57-4299-b52d-63e61444df0b",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"userId\": \"1430cff140c2ce0a0c6751f130af3224b80306b9@einfra.cesnet.cz\",\n      \"principalNames\": [\n        \"1430cff140c2ce0a0c6751f130af3224b80306b9@einfra.cesnet.cz\",\n        \"492598@muni.cz\"\n      ],\n      \"firstName\": \"Filip\",\n      \"lastName\": \"Karniš\",\n      \"organization\": \"Masarykova univerzita\",\n      \"email\": \"492598@mail.muni.cz\",\n      \"fullName\": \"Filip Karniš\",\n      \"locale\": null,\n      \"zoneInfo\": null,\n      \"eduPersonEntitlement\": [],\n      \"rootOrganization\": \"Masarykova univerzita\",\n      \"primaryEmail\": \"492598@mail.muni.cz\",\n      \"className\": \"UserInformation\"\n    }\n  ]\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
-        }
-      ],
-      "enabled": true,
-      "randomResponse": false,
-      "sequentialResponse": false
-    },
-    {
-      "uuid": "e4c1adeb-97a8-4674-b7a8-e3d86cb836bb",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "group",
-      "responses": [
-        {
-          "uuid": "0b55274f-9528-4a5c-b53a-0e6108ca3e96",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"einfra:projects:shongo:users:uvt\",\n      \"parentGroupId\": null,\n      \"name\": \"uvt\",\n      \"description\": \"Skupina obsahující lidi z UVT\",\n      \"administrators\": [],\n      \"secondaryId\": null,\n    }\n  ]\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
-        }
-      ],
-      "enabled": true,
-      "randomResponse": false,
-      "sequentialResponse": false
-    },
-    {
       "uuid": "9d8e37e7-6055-4df6-917e-104f30b1888a",
       "documentation": "",
       "method": "post",
-      "endpoint": "reservation_request/:id/user_participant",
+      "endpoint": "reservation_requests/:id/user_participant",
       "responses": [
         {
           "uuid": "6af79010-9df3-4a42-aab2-d22f04805b6e",
@@ -564,7 +489,7 @@
       "uuid": "51eac132-fa63-40f4-9b62-5f90bb14009d",
       "documentation": "",
       "method": "post",
-      "endpoint": "reservation_request/:id/guest_participant",
+      "endpoint": "reservation_requests/:id/guest_participant",
       "responses": [
         {
           "uuid": "3e00b2d8-1aaa-4846-89bb-22f8e50b19d6",
@@ -586,10 +511,35 @@
       "sequentialResponse": false
     },
     {
+      "uuid": "b64ded97-11b2-4ba4-94fd-875ac156514d",
+      "documentation": "Rooms are reservation requests scheduled by a scheduler, they become executables after scheduling.",
+      "method": "get",
+      "endpoint": "rooms",
+      "responses": [
+        {
+          "uuid": "6fc1ce63-1b85-4ab5-92cf-b01efb2658dc",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    { \n      \"id\": \"1\",\n      \"type\": \"ROOM\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"earliestSlot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"description\": \"Testing room\",\n      \"name\": \"Testing room\",\n      \"technology\": \"PEXIP\",\n      \"state\": \"FAILED\",\n      \"isAvailable\": false,\n      \"isDeprecated\": false,\n      \"licenceCount\": 10,\n      \"usageCount\": 8\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
       "uuid": "39daccc3-5fde-4390-9bc3-307022d36e7e",
       "documentation": "",
       "method": "get",
-      "endpoint": "resource/capacity_utilization",
+      "endpoint": "resources/capacity_utilizations",
       "responses": [
         {
           "uuid": "4ed211b6-b3aa-44c2-a24a-295d70215dc1",
@@ -614,7 +564,7 @@
       "uuid": "078d3a16-3a02-4915-949c-904990f9574a",
       "documentation": "",
       "method": "get",
-      "endpoint": "resource/:id/capacity_utilization",
+      "endpoint": "resources/:id/capacity_utilizations",
       "responses": [
         {
           "uuid": "307b1ede-49ba-4298-b654-e1e8647230fa",
@@ -636,14 +586,89 @@
       "sequentialResponse": false
     },
     {
+      "uuid": "35343572-70ef-4c9e-af00-318aeb2361ef",
+      "documentation": "Returns list of SystemPermission that requesting user has",
+      "method": "get",
+      "endpoint": "permissions",
+      "responses": [
+        {
+          "uuid": "47f695e2-2cdd-41dd-8b36-e6b77dfc6269",
+          "body": "[\n  ADMINISTRATOR,\n  OPERATOR,\n  RESERVATION\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "e4f66f95-c031-4b0c-825f-30f5b945dc95",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users",
+      "responses": [
+        {
+          "uuid": "64ce6cfe-ec57-4299-b52d-63e61444df0b",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"userId\": \"1430cff140c2ce0a0c6751f130af3224b80306b9@einfra.cesnet.cz\",\n      \"principalNames\": [\n        \"1430cff140c2ce0a0c6751f130af3224b80306b9@einfra.cesnet.cz\",\n        \"492598@muni.cz\"\n      ],\n      \"firstName\": \"Filip\",\n      \"lastName\": \"Karniš\",\n      \"organization\": \"Masarykova univerzita\",\n      \"email\": \"492598@mail.muni.cz\",\n      \"fullName\": \"Filip Karniš\",\n      \"locale\": null,\n      \"zoneInfo\": null,\n      \"eduPersonEntitlement\": [],\n      \"rootOrganization\": \"Masarykova univerzita\",\n      \"primaryEmail\": \"492598@mail.muni.cz\",\n      \"className\": \"UserInformation\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
       "uuid": "3e81f8e0-7700-4cd3-ae8f-c22aee367ceb",
       "documentation": "",
       "method": "put",
-      "endpoint": "user/settings",
+      "endpoint": "users/settings",
       "responses": [
         {
           "uuid": "be9c8bcf-cd5f-435b-8f3b-6a6ff168022b",
           "body": "{\n  \"usePerunSettings\": false,\n  \"language\": \"en\",\n  \"timeZone\": \"Pacific/Wake\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "e4c1adeb-97a8-4674-b7a8-e3d86cb836bb",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "groups",
+      "responses": [
+        {
+          "uuid": "0b55274f-9528-4a5c-b53a-0e6108ca3e96",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"einfra:projects:shongo:users:uvt\",\n      \"parentGroupId\": null,\n      \"name\": \"uvt\",\n      \"description\": \"Skupina obsahující lidi z UVT\",\n      \"administrators\": [],\n      \"secondaryId\": null,\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
