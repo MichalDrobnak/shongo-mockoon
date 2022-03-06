@@ -11,7 +11,7 @@
       "uuid": "669ef3be-da6a-4f2c-87f7-6ab64bb1670b",
       "documentation": "Returns different parameters based on \"type\" parameter (VIRTUAL_ROOM, PHYSICAL_RESOURCE, ROOM_CAPACITY).",
       "method": "get",
-      "endpoint": "reservation_request",
+      "endpoint": "reservation_requests",
       "responses": [
         {
           "uuid": "ef3ed42c-b6b0-4ca1-99a2-34af4bfaa3c3",
