@@ -668,7 +668,7 @@
       "responses": [
         {
           "uuid": "0b55274f-9528-4a5c-b53a-0e6108ca3e96",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"einfra:projects:shongo:users:uvt\",\n      \"parentGroupId\": null,\n      \"name\": \"uvt\",\n      \"description\": \"Skupina obsahující lidi z UVT\",\n      \"administrators\": [],\n      \"secondaryId\": null,\n    }\n  ]\n}",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"einfra:projects:shongo:users:uvt\",\n      \"parentGroupId\": null,\n      \"name\": \"uvt\",\n      \"description\": \"Skupina obsahující lidi z UVT\",\n      \"administrators\": [],\n      \"secondaryId\": null\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
