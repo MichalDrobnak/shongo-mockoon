@@ -362,8 +362,8 @@
     },
     {
       "uuid": "cee4d8f4-ad6c-4fa7-8835-bd4207acb5cf",
-      "documentation": "",
-      "method": "put",
+      "documentation": "Takes partial JSON data to update participant.",
+      "method": "patch",
       "endpoint": "reservation_requests/:objectId/runtime_management/participants/:participantId",
       "responses": [
         {
