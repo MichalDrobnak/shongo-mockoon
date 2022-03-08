@@ -343,13 +343,13 @@
       "responses": [
         {
           "uuid": "82e64703-3e39-4523-9e0c-db6543568742",
-          "body": "{}",
+          "body": "",
           "latency": 0,
           "statusCode": 200,
           "label": "",
           "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
+          "filePath": "./assets/zoom.jpg",
+          "sendFileAsBody": true,
           "rules": [],
           "rulesOperator": "OR",
           "disableTemplating": false,
