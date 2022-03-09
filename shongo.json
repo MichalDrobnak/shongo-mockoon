@@ -318,7 +318,7 @@
       "responses": [
         {
           "uuid": "27a7bc2f-5209-44df-a68d-9d2b0302aefd",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": 1,\n      \"name\": \"Michal Drobnak\",\n      \"role\": \"ADMIN\",\n      \"email\": \"463239@muni.cz\",\n      \"layout\": \"SPEAKER\",\n      \"microphoneEnabled\": true,\n      \"microphoneLevel\": 10,\n      \"videoEnabled\": true,\n      \"videoSnapshot\": true\n    }\n  ]\n}",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"1\",\n      \"name\": \"Michal Drobnak\",\n      \"displayName\": \"fancy_pants123\",\n      \"role\": \"ADMIN\",\n      \"alias\": \"ROOM_NAME\",\n      \"email\": \"463239@muni.cz\",\n      \"layout\": \"SPEAKER\",\n      \"microphoneEnabled\": true,\n      \"microphoneLevel\": 10,\n      \"videoEnabled\": true,\n      \"videoSnapshot\": true\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -343,13 +343,13 @@
       "responses": [
         {
           "uuid": "82e64703-3e39-4523-9e0c-db6543568742",
-          "body": "{}",
+          "body": "",
           "latency": 0,
           "statusCode": 200,
           "label": "",
           "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
+          "filePath": "./assets/zoom.jpg",
+          "sendFileAsBody": true,
           "rules": [],
           "rulesOperator": "OR",
           "disableTemplating": false,
@@ -362,8 +362,8 @@
     },
     {
       "uuid": "cee4d8f4-ad6c-4fa7-8835-bd4207acb5cf",
-      "documentation": "",
-      "method": "put",
+      "documentation": "Takes partial JSON data to update participant.",
+      "method": "patch",
       "endpoint": "reservation_requests/:objectId/runtime_management/participants/:participantId",
       "responses": [
         {
@@ -668,7 +668,7 @@
       "responses": [
         {
           "uuid": "0b55274f-9528-4a5c-b53a-0e6108ca3e96",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"einfra:projects:shongo:users:uvt\",\n      \"parentGroupId\": null,\n      \"name\": \"uvt\",\n      \"description\": \"Skupina obsahující lidi z UVT\",\n      \"administrators\": [],\n      \"secondaryId\": null,\n    }\n  ]\n}",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"einfra:projects:shongo:users:uvt\",\n      \"parentGroupId\": null,\n      \"name\": \"uvt\",\n      \"description\": \"Skupina obsahující lidi z UVT\",\n      \"administrators\": [],\n      \"secondaryId\": null\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
