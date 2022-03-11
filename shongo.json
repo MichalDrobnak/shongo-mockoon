@@ -15,7 +15,7 @@
       "responses": [
         {
           "uuid": "ef3ed42c-b6b0-4ca1-99a2-34af4bfaa3c3",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:3\",\n      \"description\": \"Capacity reservation\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"lastReservationId\": \"1\",\n      \"state\": \"FAILED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"notifyParticipants\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"futureSlotCount\": 5,\n      \"isDeprecated\": false,\n      \"type\": \"ROOM_CAPACITY\",\n      \"roomCapacityData\": {\n        \"roomName\": \"Some room\",\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:1\",\n        \"roomParticipantCount\": 5\n      }\n    }\n  ]\n}",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:3\",\n      \"description\": \"Capacity reservation\",\n      \"lastReservationId\": \"1\",\n      \"state\": \"FAILED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"notifyParticipants\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"futureSlotCount\": 5,\n      \"isDeprecated\": false,\n      \"type\": \"ROOM_CAPACITY\",\n      \"roomCapacityData\": {\n        \"roomName\": \"Some room\",\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:1\",\n        \"roomParticipantCount\": 5\n      }\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -543,7 +543,7 @@
       "responses": [
         {
           "uuid": "6fc1ce63-1b85-4ab5-92cf-b01efb2658dc",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    { \n      \"id\": \"1\",\n      \"type\": \"ROOM\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"earliestSlot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"description\": \"Testing room\",\n      \"name\": \"Testing room\",\n      \"technology\": \"PEXIP\",\n      \"state\": \"FAILED\",\n      \"isAvailable\": false,\n      \"isDeprecated\": false,\n      \"licenceCount\": 10,\n      \"usageCount\": 8\n    }\n  ]\n}",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    { \n      \"id\": \"1\",\n      \"type\": \"ROOM\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"earliestSlot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"description\": \"Testing room\",\n      \"name\": \"Testing room\",\n      \"technology\": \"PEXIP\",\n      \"state\": \"FAILED\",\n      \"isDeprecated\": false,\n      \"licenceCount\": 10,\n      \"usageCount\": 8\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
