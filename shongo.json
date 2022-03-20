@@ -1039,7 +1039,7 @@
       "responses": [
         {
           "uuid": "69f40350-6d06-4ae5-9865-e63988aaa96b",
-          "body": "{\n  \"locale\": \"en\",\n  \"homeTimeZone\": \"Europe/Bratislava\",\n  \"currentTimeZone\": null,\n  \"administrationMode\": true,\n  \"permissions\": [\n    \"ADMINISTRATOR\",\n    \"OPERATOR\",\n    \"RESERVATION\"\n  ],\n  \"useWebService\": false\n}",
+          "body": "{\n  \"locale\": \"en\",\n  \"homeTimeZone\": \"Europe/Bratislava\",\n  \"currentTimeZone\": \"Africa/Luanda\",\n  \"administrationMode\": true,\n  \"permissions\": [\n    \"ADMINISTRATOR\",\n    \"OPERATOR\",\n    \"RESERVATION\"\n  ],\n  \"useWebService\": true\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1064,7 +1064,7 @@
       "responses": [
         {
           "uuid": "be9c8bcf-cd5f-435b-8f3b-6a6ff168022b",
-          "body": "{}",
+          "body": "{\n  \"locale\": \"cz\",\n  \"homeTimeZone\": \"Pacific/Apia\",\n  \"currentTimeZone\": null,\n  \"administrationMode\": true,\n  \"permissions\": [\n    \"ADMINISTRATOR\",\n    \"OPERATOR\",\n    \"RESERVATION\"\n  ],\n  \"useWebService\": false\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
