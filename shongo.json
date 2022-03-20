@@ -148,14 +148,7 @@
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "params",
-              "modifier": "roomReservationRequestId",
-              "value": "shongo:meetings.cesnet.cz:req:1",
-              "operator": "equals"
-            }
-          ],
+          "rules": [],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false
@@ -640,6 +633,39 @@
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false
+        },
+        {
+          "uuid": "0fbe6836-0aa2-40d1-8e71-2d95b8c77068",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:rec:1\",\n      \"resourceId\": \"shongo:meetings.cesnet.cz:res:42\",\n      \"name\": \"My recording\",\n      \"description\": \"Recording description\",\n      \"isPublic\": true,\n      \"beginDate\": \"2021-11-04T08:00:00.000Z\",\n      \"duration\": 5400247,\n      \"downloadUrl\": \"http://localhost\",\n      \"viewUrl\": \"https://www.youtube.com/\",\n      \"editUrl\": \"http://localhost\",\n      \"filename\": \"Videoconference:2021-11-04T08:00:00.000Z.mp4\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Recordings for shongo:meetings.cesnet.cz:req:4, shongo:meetings.cesnet.cz:req:5 and shongo:meetings.cesnet.cz:req:6",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "shongo:meetings.cesnet.cz:req:4",
+              "operator": "equals"
+            },
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "shongo:meetings.cesnet.cz:req:6",
+              "operator": "equals"
+            },
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "shongo:meetings.cesnet.cz:req:6",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
         }
       ],
       "enabled": true,
@@ -956,31 +982,6 @@
       "sequentialResponse": false
     },
     {
-      "uuid": "3e81f8e0-7700-4cd3-ae8f-c22aee367ceb",
-      "documentation": "",
-      "method": "put",
-      "endpoint": "users/settings",
-      "responses": [
-        {
-          "uuid": "be9c8bcf-cd5f-435b-8f3b-6a6ff168022b",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
-        }
-      ],
-      "enabled": true,
-      "randomResponse": false,
-      "sequentialResponse": false
-    },
-    {
       "uuid": "e4f66f95-c031-4b0c-825f-30f5b945dc95",
       "documentation": "",
       "method": "get",
@@ -1031,14 +1032,39 @@
       "sequentialResponse": false
     },
     {
-      "uuid": "35343572-70ef-4c9e-af00-318aeb2361ef",
-      "documentation": "Returns list of SystemPermission that requesting user has",
+      "uuid": "a62eb685-8ffd-48b8-a8dc-e3b548e13a61",
+      "documentation": "",
       "method": "get",
-      "endpoint": "permissions",
+      "endpoint": "settings",
       "responses": [
         {
-          "uuid": "47f695e2-2cdd-41dd-8b36-e6b77dfc6269",
-          "body": "[\n  ADMINISTRATOR,\n  OPERATOR,\n  RESERVATION\n]",
+          "uuid": "69f40350-6d06-4ae5-9865-e63988aaa96b",
+          "body": "{\n  \"permissions\": [\n    \"ADMINISTRATOR\",\n    \"OPERATOR\",\n    \"RESERVATION\"\n  ],\n  \"locale\": \"en\",\n  \"homeTimeZone\": \"Europe/Bratislava\",\n  \"currentTimeZone\": null,\n  \"administrationMode\": true\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "3e81f8e0-7700-4cd3-ae8f-c22aee367ceb",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "settings",
+      "responses": [
+        {
+          "uuid": "be9c8bcf-cd5f-435b-8f3b-6a6ff168022b",
+          "body": "{}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
