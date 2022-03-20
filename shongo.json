@@ -166,7 +166,7 @@
       "responses": [
         {
           "uuid": "fc8a9fd3-4cc7-4af7-ba19-921c7422ec37",
-          "body": "{\n  \"id\": \"shongo:meetings.cesnet.cz:req:8\",\n  \"description\": \"Daily capacity for stand-up meeting.\",\n  \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n  \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n  \"state\": \"ALLOCATED_FINISHED\",\n  \"allocationState\": \"ALLOCATED\",\n  \"executableState\": \"STOPPED\",\n  \"isWritable\": false,\n  \"isProvidable\": false,\n  \"notifyParticipants\": true,\n  \"ownerName\": \"Michal Drobnak\",\n  \"ownerEmail\": \"493239@muni.cz\",\n  \"slot\": {\n    \"start\": \"2021-11-06T08:00:00.000Z\",\n    \"end\": \"2021-11-06T08:30:00.000Z\"\n  },\n  \"isDeprecated\": true,\n  \"type\": \"ROOM_CAPACITY\",\n  \"virtualRoomData\": {\n    \"state\": \"STOPPED\",\n    \"technology\": \"ADOBE_CONNECT\",\n    \"roomName\": \"Daily stand-up\",\n    \"roomHasRecordings\": true\n  },\n  \"roomCapacityData\": {\n    \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n    \"capacityParticipantCount\": 2,\n    \"capacityHasRecordingService\": true,\n    \"capacityHasRecordings\": false,\n    \"isRecordingActive\": false\n  },\n  \"authorizedData\": {\n    \"pin\": \"1234\",\n    \"adminPin\": \"5678\",\n    \"guestPin\": \"4789\",\n    \"allowGuests\": true,\n    \"aliases\": [\n      {\n        \"type\": \"ADOBE_CONNECT_URI\",\n        \"value\": \"https://adobe.connect.com/asd4559a498w49df5\"\n      }\n    ]\n  },\n  \"history\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:8\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"createdBy\": \"Michal Drobnak\",\n      \"type\": \"NEW\",\n      \"allocationState\": \"ALLOCATED\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isActive\": false,\n      \"isLatestAllocated\": true\n    }\n  ]\n}",
+          "body": "{\n  \"id\": \"shongo:meetings.cesnet.cz:req:8\",\n  \"description\": \"Daily capacity for stand-up meeting.\",\n  \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n  \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n  \"state\": \"ALLOCATED_FINISHED\",\n  \"allocationState\": \"ALLOCATED\",\n  \"executableState\": \"STOPPED\",\n  \"isWritable\": false,\n  \"isProvidable\": false,\n  \"notifyParticipants\": true,\n  \"ownerName\": \"Michal Drobnak\",\n  \"ownerEmail\": \"493239@muni.cz\",\n  \"slot\": {\n    \"start\": \"2021-11-06T08:00:00.000Z\",\n    \"end\": \"2021-11-06T08:30:00.000Z\"\n  },\n  \"isDeprecated\": true,\n  \"type\": \"ROOM_CAPACITY\",\n  \"virtualRoomData\": {\n    \"state\": \"STOPPED\",\n    \"technology\": \"ADOBE_CONNECT\",\n    \"roomName\": \"Daily stand-up\",\n    \"roomHasRecordings\": true\n  },\n  \"roomCapacityData\": {\n    \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n    \"capacityParticipantCount\": 2,\n    \"capacityHasRecordingService\": true,\n    \"capacityHasRecordings\": false,\n    \"isRecordingActive\": false\n  },\n  \"authorizedData\": {\n    \"pin\": \"1234\",\n    \"adminPin\": \"5678\",\n    \"guestPin\": \"4789\",\n    \"allowGuests\": true,\n    \"aliases\": [\n      {\n        \"type\": \"ADOBE_CONNECT_URI\",\n        \"value\": \"https://adobe.connect.com/asd4559a498w49df5\"\n      }\n    ]\n  },\n  \"history\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:8\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"createdBy\": \"Michal Drobnak\",\n      \"type\": \"NEW\",\n      \"allocationState\": \"ALLOCATED\",\n      \"state\": \"ALLOCATED_FINISHED\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Third capacity request for (shongo:meetings.cesnet.cz:req:5)",
@@ -1014,7 +1014,7 @@
       "responses": [
         {
           "uuid": "0b55274f-9528-4a5c-b53a-0e6108ca3e96",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"einfra:projects:shongo:users:uvt\",\n      \"parentGroupId\": null,\n      \"name\": \"uvt\",\n      \"description\": \"Skupina obsahující lidi z UVT\",\n      \"administrators\": [],\n      \"secondaryId\": null\n    }\n  ]\n}",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"einfra:projects:shongo:users:uvt\",\n      \"type\": \"SYSTEM\",\n      \"parentGroupId\": null,\n      \"name\": \"uvt\",\n      \"description\": \"Skupina obsahující lidi z UVT\",\n      \"administrators\": [],\n      \"secondaryId\": null\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1039,7 +1039,7 @@
       "responses": [
         {
           "uuid": "69f40350-6d06-4ae5-9865-e63988aaa96b",
-          "body": "{\n  \"permissions\": [\n    \"ADMINISTRATOR\",\n    \"OPERATOR\",\n    \"RESERVATION\"\n  ],\n  \"locale\": \"en\",\n  \"homeTimeZone\": \"Europe/Bratislava\",\n  \"currentTimeZone\": null,\n  \"administrationMode\": true\n}",
+          "body": "{\n  \"locale\": \"en\",\n  \"homeTimeZone\": \"Europe/Bratislava\",\n  \"currentTimeZone\": null,\n  \"administrationMode\": true,\n  \"permissions\": [\n    \"ADMINISTRATOR\",\n    \"OPERATOR\",\n    \"RESERVATION\"\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
