@@ -441,13 +441,13 @@
       "sequentialResponse": false
     },
     {
-      "uuid": "b4c58465-b9f0-41eb-ba50-6581afc2f92f",
-      "documentation": "",
-      "method": "delete",
-      "endpoint": "reservation_requests/:id/participants/:participantId",
+      "uuid": "9d8e37e7-6055-4df6-917e-104f30b1888a",
+      "documentation": "?userId=1430cff140c2ce0a0c6751f130af3224b80306b9@einfra.cesnet.cz&role=PRESENTER || ?name=username&email=aaa@gmail.com&role=PRESENTER",
+      "method": "post",
+      "endpoint": "reservation_requests/:id/participants",
       "responses": [
         {
-          "uuid": "8a640bf8-25ce-4b49-92fd-05cbb45a0bba",
+          "uuid": "6af79010-9df3-4a42-aab2-d22f04805b6e",
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
@@ -467,13 +467,38 @@
     },
     {
       "uuid": "351a7e17-2a2e-411c-a395-3fd96ae77f4f",
-      "documentation": "",
+      "documentation": "?role=PRESENTER",
       "method": "put",
       "endpoint": "reservation_requests/:objectId/participants/:participantId",
       "responses": [
         {
           "uuid": "efc678c3-1502-4fa1-9fde-a81fd03cfe37",
           "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "b4c58465-b9f0-41eb-ba50-6581afc2f92f",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "reservation_requests/:id/participants/:participantId",
+      "responses": [
+        {
+          "uuid": "8a640bf8-25ce-4b49-92fd-05cbb45a0bba",
+          "body": "{}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -839,56 +864,6 @@
       "responses": [
         {
           "uuid": "46260b8a-57e2-4e75-916b-a1b3ddf4ee01",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
-        }
-      ],
-      "enabled": true,
-      "randomResponse": false,
-      "sequentialResponse": false
-    },
-    {
-      "uuid": "9d8e37e7-6055-4df6-917e-104f30b1888a",
-      "documentation": "",
-      "method": "post",
-      "endpoint": "reservation_requests/:id/user_participant",
-      "responses": [
-        {
-          "uuid": "6af79010-9df3-4a42-aab2-d22f04805b6e",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
-        }
-      ],
-      "enabled": true,
-      "randomResponse": false,
-      "sequentialResponse": false
-    },
-    {
-      "uuid": "51eac132-fa63-40f4-9b62-5f90bb14009d",
-      "documentation": "",
-      "method": "post",
-      "endpoint": "reservation_requests/:id/guest_participant",
-      "responses": [
-        {
-          "uuid": "3e00b2d8-1aaa-4846-89bb-22f8e50b19d6",
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
