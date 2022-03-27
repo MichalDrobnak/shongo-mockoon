@@ -180,6 +180,31 @@
       "sequentialResponse": false
     },
     {
+      "uuid": "0ec8139f-f539-42c5-a176-8d0a7baee242",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "reservation_requests",
+      "responses": [
+        {
+          "uuid": "d0967ac3-78d9-49fe-99b9-958b44a631b7",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
       "uuid": "9df8aa67-d6b5-49f6-bc46-b1bd0afa60ac",
       "documentation": "Returns requests with all data",
       "method": "get",
