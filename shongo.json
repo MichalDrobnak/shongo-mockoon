@@ -1151,6 +1151,31 @@
       "enabled": true,
       "randomResponse": false,
       "sequentialResponse": false
+    },
+    {
+      "uuid": "d8460c99-abfc-465e-abe3-8383c7c74661",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "resources",
+      "responses": [
+        {
+          "uuid": "9338e80a-dd9c-47da-be77-8e0d768bbf8f",
+          "body": "{\n  \"count\": 9,\n  \"items\": [\n    {\n      \"type\": \"VIRTUAL_RESOURCE\",\n      \"id\": \"shongo:meetings.cesnet.cz:res:1\",\n      \"tag\": \"PEXIP\"\n    },\n    {\n      \"type\": \"VIRTUAL_RESOURCE\",\n      \"id\": \"shongo:meetings.cesnet.cz:res:2\",\n      \"tag\": \"ADOBE_CONNECT\"\n    },\n    {\n      \"type\": \"VIRTUAL_RESOURCE\",\n      \"id\": \"shongo:meetings.cesnet.cz:res:3\",\n      \"tag\": \"TELECONFERENCE\"\n    },\n    {\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"id\": \"shongo:meetings.cesnet.cz:res:4\",\n      \"tag\": \"MEETING_ROOM\",\n      \"name\": \"Malá zasedačka (Gotex, G318)\"\n    },\n    {\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"id\": \"shongo:meetings.cesnet.cz:res:5\",\n      \"tag\": \"MEETING_ROOM\",\n      \"name\": \"Velká zasedačka (Gotex, G317)\"\n    },\n    {\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"id\": \"shongo:meetings.cesnet.cz:res:6\",\n      \"tag\": \"MEETING_ROOM\",\n      \"name\": \"Klub ÚVT (Botanická, C023)\"\n    },\n    {\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"id\": \"shongo:meetings.cesnet.cz:res:7\",\n      \"tag\": \"MEETING_ROOM\",\n      \"name\": \"Zasedačka ÚVT (Gotex, G331)\"\n    },\n    {\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"id\": \"shongo:meetings.cesnet.cz:res:8\",\n      \"tag\": \"PARKING_PLACE\",\n      \"name\": \"Šumavská 20 - Parkovací místo\"\n    },\n    {\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"id\": \"shongo:meetings.cesnet.cz:res:9\",\n      \"tag\": \"PARKING_PLACE\",\n      \"name\": \"Šumavská 84 - Parkovací místo\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
     }
   ],
   "proxyMode": false,
