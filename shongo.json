@@ -384,6 +384,31 @@
       "sequentialResponse": false
     },
     {
+      "uuid": "2978eb70-f468-4c8d-bf3f-acab58a7c997",
+      "documentation": "Deletes all requests. Works only with query for type (?type=VIRTUAL_ROOM || PHYSICAL_RESOURCE), doesn't need to work for ROOM_CAPACITY. Request may contain a body with IDs of requests, in that case delete only those reservations.",
+      "method": "delete",
+      "endpoint": "reservation_requests",
+      "responses": [
+        {
+          "uuid": "2d0c348a-e5e7-457e-9bef-eb19c643a385",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
       "uuid": "39239367-0554-4075-9d6a-1402e1ec5cc4",
       "documentation": "",
       "method": "delete",
