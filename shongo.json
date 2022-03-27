@@ -384,6 +384,56 @@
       "sequentialResponse": false
     },
     {
+      "uuid": "48d59b57-8159-4cdf-8d5e-ad64f2ea3f4e",
+      "documentation": "Accepts reservation request, user needs to have permissions to perform this action.",
+      "method": "post",
+      "endpoint": "reservation_requests/:id/accept",
+      "responses": [
+        {
+          "uuid": "45d84cc5-ab27-4ea6-b804-84cdfa0173df",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "ffc40a2c-c249-4ee7-b386-0d956a1f5034",
+      "documentation": "Rejects reservation request, user needs to have permissions to perform this action.",
+      "method": "post",
+      "endpoint": "reservation_requests/:id/reject",
+      "responses": [
+        {
+          "uuid": "429464cd-d7a0-4a88-915a-2deb71ad438c",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
       "uuid": "2978eb70-f468-4c8d-bf3f-acab58a7c997",
       "documentation": "Deletes all requests. Works only with query for type (?type=VIRTUAL_ROOM || PHYSICAL_RESOURCE), doesn't need to work for ROOM_CAPACITY. Request may contain a body with IDs of requests, in that case delete only those reservations.",
       "method": "delete",
