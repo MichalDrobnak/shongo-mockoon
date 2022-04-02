@@ -384,6 +384,31 @@
       "sequentialResponse": false
     },
     {
+      "uuid": "cf0db812-66c4-4e8c-87b7-32e034076712",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "reservation_requests/:id",
+      "responses": [
+        {
+          "uuid": "15343b8a-3aed-4025-94fd-55c89ae61f71",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
       "uuid": "48d59b57-8159-4cdf-8d5e-ad64f2ea3f4e",
       "documentation": "Accepts reservation request, user needs to have permissions to perform this action.",
       "method": "post",
