@@ -1362,6 +1362,31 @@
       "enabled": true,
       "randomResponse": false,
       "sequentialResponse": true
+    },
+    {
+      "uuid": "3303f124-76bf-40e1-abd7-4c30c6c1ca08",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "report",
+      "responses": [
+        {
+          "uuid": "0f24b0d2-f6e7-495c-8c11-2795ed88db12",
+          "body": "{}",
+          "latency": 2000,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
     }
   ],
   "proxyMode": false,
