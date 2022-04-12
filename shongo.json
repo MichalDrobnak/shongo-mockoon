@@ -187,7 +187,7 @@
             {
               "target": "query",
               "modifier": "resource",
-              "value": "shongo:meetings.cesnet.cz:res:4",
+              "value": "shongo:maper-local:res:5",
               "operator": "equals"
             }
           ],
