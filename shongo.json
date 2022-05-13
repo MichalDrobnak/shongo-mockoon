@@ -9,13 +9,27 @@
   "routes": [
     {
       "uuid": "669ef3be-da6a-4f2c-87f7-6ab64bb1670b",
-      "documentation": "Returns requests without these parameters: allocationState, executableState, history, authorizedData, notifyParticipants",
+      "documentation": "",
       "method": "get",
       "endpoint": "reservation_requests",
       "responses": [
         {
+          "uuid": "ef3ed42c-b6b0-4ca1-99a2-34af4bfaa3c3",
+          "body": "{\n  \"count\": 10,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:2\",\n      \"description\": \"Capacity for meeting about bachelors thesis.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:1\",\n      \"state\": \"ALLOCATED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"state\": \"NOT_STARTED\",\n        \"technology\": \"PEXIP\",\n        \"roomName\": \"Bachelors thesis meeting\",\n        \"roomHasRecordings\": false\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:1\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false,\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T00:00:00.000Z\",\n        \"end\": \"2021-11-07T00:00:00.000Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false,\n        \"periodicity\": {\n          \"type\": \"DAILY\",\n          \"periodicityEnd\": \"2021-11-07T00:00:00.000Z\",\n          \"excludeDays\": []\n        }\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:6\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T08:00:00.000Z\",\n        \"end\": \"2021-11-04T08:30:00.000Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:7\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-05T08:00:00.000Z\",\n        \"end\": \"2021-11-05T08:30:00.000Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:8\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-06T08:00:00.000Z\",\n        \"end\": \"2021-11-06T08:30:00.000Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:3\",\n      \"description\": \"A meeting room reservation.\",\n      \"createdAt\": \"2021-11-03T19:20:07.232Z\",\n      \"state\": \"CONFIRM_AWAITING\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-05T17:00:00.000Z\",\n        \"end\": \"2021-11-05T18:00:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"physicalResourceData\": {\n        \"resourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"resourceName\": \"Malá zasedačka (Gotex, G318)\",\n        \"resourceDescription\": \"Zasedací místnost v budově GOTEXu.\",\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:1\",\n      \"description\": \"Meeting about bachelors thesis.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"state\": \"ALLOCATED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"futureSlotCount\": 1,\n      \"isDeprecated\": false,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"state\": \"NOT_STARTED\",\n        \"technology\": \"PEXIP\",\n        \"roomName\": \"Bachelors thesis meeting\",\n        \"roomHasRecordings\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:4\",\n      \"description\": \"Daily stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T00:00:00.000Z\",\n        \"end\": \"2021-11-07T00:00:00.000Z\"\n      },\n      \"futureSlotCount\": 3,\n      \"isDeprecated\": true,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:9\",\n      \"description\": \"Teleconference reservation with a very long unneccessary description.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"state\": \"ALLOCATED_STARTED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"notifyParticipants\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:3\",\n        \"state\": \"STARTED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Adobe connect meeting\",\n        \"roomHasRecordings\": true\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:10\",\n      \"description\": \"Room capacity for adobe connect.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:9\",\n      \"state\": \"ALLOCATED_STARTED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"notifyParticipants\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:3\",\n        \"state\": \"STARTED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Adobe connect meeting\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:1\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": true,\n        \"isRecordingActive\": false,\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "All requests",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        },
+        {
           "uuid": "056ef67a-1d4f-4074-889a-0fb51c1f5e91",
-          "body": "{\n  \"count\": 3,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:6\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2021-11-02T18:38:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-03T18:38:09.546Z\",\n        \"end\": \"2021-11-03T19:38:09.546Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:7\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2021-11-01T11:38:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-05T18:38:09.546Z\",\n        \"end\": \"2021-11-06T02:38:09.546Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:8\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2021-11-02T18:58:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-03T08:38:00.546Z\",\n        \"end\": \"2021-11-03T11:00:00.546Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:11\",\n      \"description\": \"Adobe connect reservation with modified description.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"state\": \"ALLOCATED_STARTED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"notifyParticipants\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:3\",\n        \"state\": \"STARTED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Adobe connect meeting\",\n        \"roomHasRecordings\": true\n      }\n    }\n  ]\n}",
+          "body": "{\n  \"count\": 3,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:6\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2021-11-02T18:38:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-03T18:38:09.546Z\",\n        \"end\": \"2021-11-03T19:38:09.546Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:7\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2021-11-01T11:38:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-05T18:38:09.546Z\",\n        \"end\": \"2021-11-06T02:38:09.546Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:8\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2021-11-02T18:58:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-03T08:38:00.546Z\",\n        \"end\": \"2021-11-03T11:00:00.546Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Capacities for request (shongo:meetings.cesnet.cz:req:5)",
@@ -24,7 +38,7 @@
           "sendFileAsBody": false,
           "rules": [
             {
-              "target": "params",
+              "target": "query",
               "modifier": "parentRequestId",
               "value": "shongo:meetings.cesnet.cz:req:5",
               "operator": "equals"
@@ -81,7 +95,7 @@
           "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:10\",\n      \"description\": \"Room capacity for adobe connect.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:9\",\n      \"state\": \"ALLOCATED_STARTED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"notifyParticipants\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:3\",\n        \"state\": \"STARTED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Adobe connect meeting\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:1\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": true,\n        \"isRecordingActive\": false,\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
-          "label": "Capacities for request (shongo:meetings.cesnet.cz:req:9)",
+          "label": "Capacities for request (shongo:meetings.cesnet.cz:req:11)",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -89,7 +103,7 @@
             {
               "target": "query",
               "modifier": "parentRequestId",
-              "value": "shongo:meetings.cesnet.cz:req:9",
+              "value": "shongo:meetings.cesnet.cz:req:11",
               "operator": "equals"
             }
           ],
@@ -99,7 +113,7 @@
         },
         {
           "uuid": "92c52df2-f8bf-44ef-bdf2-35c2bf80d0a6",
-          "body": "{\n  \"count\": 2,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:1\",\n      \"description\": \"Meeting about bachelors thesis.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"state\": \"ALLOCATED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"futureSlotCount\": 1,\n      \"isDeprecated\": false,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"state\": \"NOT_STARTED\",\n        \"technology\": \"PEXIP\",\n        \"roomName\": \"Bachelors thesis meeting\",\n        \"roomHasRecordings\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:4\",\n      \"description\": \"Daily stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T00:00:00.000Z\",\n        \"end\": \"2021-11-07T00:00:00.000Z\"\n      },\n      \"futureSlotCount\": 3,\n      \"isDeprecated\": true,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:11\",\n      \"description\": \"Adobe connect reservation with modified description.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"state\": \"ALLOCATED_STARTED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"notifyParticipants\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:3\",\n        \"state\": \"STARTED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Adobe connect meeting\",\n        \"roomHasRecordings\": true\n      }\n    }\n  ]\n}",
+          "body": "{\n  \"count\": 3,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:1\",\n      \"description\": \"Meeting about bachelors thesis.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"state\": \"ALLOCATED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"futureSlotCount\": 1,\n      \"isDeprecated\": false,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"state\": \"NOT_STARTED\",\n        \"technology\": \"PEXIP\",\n        \"roomName\": \"Bachelors thesis meeting\",\n        \"roomHasRecordings\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:4\",\n      \"description\": \"Daily stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T00:00:00.000Z\",\n        \"end\": \"2021-11-07T00:00:00.000Z\"\n      },\n      \"futureSlotCount\": 3,\n      \"isDeprecated\": true,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:11\",\n      \"description\": \"Adobe connect reservation with modified description.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"state\": \"ALLOCATED_STARTED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"notifyParticipants\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:3\",\n        \"state\": \"STARTED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Adobe connect meeting\",\n        \"roomHasRecordings\": true\n      }\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Virtual rooms",
@@ -112,9 +126,15 @@
               "modifier": "type",
               "value": "VIRTUAL_ROOM",
               "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "resource",
+              "value": "",
+              "operator": "null"
             }
           ],
-          "rulesOperator": "OR",
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false
         },
@@ -154,29 +174,21 @@
               "modifier": "type",
               "value": "PHYSICAL_RESOURCE",
               "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "resource",
+              "value": "",
+              "operator": "null"
             }
           ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
-        },
-        {
-          "uuid": "ef3ed42c-b6b0-4ca1-99a2-34af4bfaa3c3",
-          "body": "{\n  \"count\": 10,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:2\",\n      \"description\": \"Capacity for meeting about bachelors thesis.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:1\",\n      \"state\": \"ALLOCATED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"state\": \"NOT_STARTED\",\n        \"technology\": \"PEXIP\",\n        \"roomName\": \"Bachelors thesis meeting\",\n        \"roomHasRecordings\": false\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:1\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false,\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T00:00:00.000Z\",\n        \"end\": \"2021-11-07T00:00:00.000Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false,\n        \"periodicity\": {\n          \"type\": \"DAILY\",\n          \"periodicityEnd\": \"2021-11-07T00:00:00.000Z\",\n          \"excludeDays\": []\n        }\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:6\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T08:00:00.000Z\",\n        \"end\": \"2021-11-04T08:30:00.000Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:7\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-05T08:00:00.000Z\",\n        \"end\": \"2021-11-05T08:30:00.000Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:8\",\n      \"description\": \"Daily capacity for stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:5\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-06T08:00:00.000Z\",\n        \"end\": \"2021-11-06T08:30:00.000Z\"\n      },\n      \"isDeprecated\": true,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:4\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": false,\n        \"isRecordingActive\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:3\",\n      \"description\": \"A meeting room reservation.\",\n      \"createdAt\": \"2021-11-03T19:20:07.232Z\",\n      \"state\": \"CONFIRM_AWAITING\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-05T17:00:00.000Z\",\n        \"end\": \"2021-11-05T18:00:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"physicalResourceData\": {\n        \"resourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"resourceName\": \"Malá zasedačka (Gotex, G318)\",\n        \"resourceDescription\": \"Zasedací místnost v budově GOTEXu.\",\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:1\",\n      \"description\": \"Meeting about bachelors thesis.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"state\": \"ALLOCATED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"futureSlotCount\": 1,\n      \"isDeprecated\": false,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"state\": \"NOT_STARTED\",\n        \"technology\": \"PEXIP\",\n        \"roomName\": \"Bachelors thesis meeting\",\n        \"roomHasRecordings\": false\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:4\",\n      \"description\": \"Daily stand-up meeting.\",\n      \"createdAt\": \"2022-03-10T19:46:05.215Z\",\n      \"state\": \"ALLOCATED_FINISHED\",\n      \"isWritable\": false,\n      \"isProvidable\": false,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T00:00:00.000Z\",\n        \"end\": \"2021-11-07T00:00:00.000Z\"\n      },\n      \"futureSlotCount\": 3,\n      \"isDeprecated\": true,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:2\",\n        \"state\": \"STOPPED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Daily stand-up\",\n        \"roomHasRecordings\": true\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:9\",\n      \"description\": \"Teleconference reservation with a very long unneccessary description.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"state\": \"ALLOCATED_STARTED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"notifyParticipants\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"VIRTUAL_ROOM\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:3\",\n        \"state\": \"STARTED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Adobe connect meeting\",\n        \"roomHasRecordings\": true\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:10\",\n      \"description\": \"Room capacity for adobe connect.\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"parentRequestId\": \"shongo:meetings.cesnet.cz:req:9\",\n      \"state\": \"ALLOCATED_STARTED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"notifyParticipants\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2021-11-04T15:30:00.000Z\",\n        \"end\": \"2021-11-04T16:30:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"ROOM_CAPACITY\",\n      \"virtualRoomData\": {\n        \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:3\",\n        \"state\": \"STARTED\",\n        \"technology\": \"ADOBE_CONNECT\",\n        \"roomName\": \"Adobe connect meeting\",\n        \"roomHasRecordings\": true\n      },\n      \"roomCapacityData\": {\n        \"roomReservationRequestId\": \"shongo:meetings.cesnet.cz:req:1\",\n        \"capacityParticipantCount\": 2,\n        \"capacityHasRecordingService\": true,\n        \"capacityHasRecordings\": true,\n        \"isRecordingActive\": false,\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    }\n  ]\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "All requests",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false
         },
         {
           "uuid": "f1d96f13-0da0-46bd-a5d7-3de99c5de67c",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:3\",\n      \"description\": \"A meeting room reservation.\",\n      \"createdAt\": \"2022-03-29T15:36:01.580Z\",\n      \"state\": \"CONFIRM_AWAITING\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2022-03-29T15:36:01.580Z\",\n        \"end\": \"2022-03-29T16:36:01.580Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"physicalResourceData\": {\n        \"resourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"resourceName\": \"Malá zasedačka (Gotex, G318)\",\n        \"resourceDescription\": \"Zasedací místnost v budově GOTEXu.\",\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    }\n  ]\n}",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:3\",\n      \"description\": \"A meeting room reservation.\",\n      \"createdAt\": \"2022-03-29T15:36:01.580Z\",\n      \"state\": \"CONFIRM_AWAITING\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2022-03-29T04:15:00.000Z\",\n        \"end\": \"2022-03-29T05:00:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"physicalResourceData\": {\n        \"resourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"resourceName\": \"Malá zasedačka (Gotex, G318)\",\n        \"resourceDescription\": \"Zasedací místnost v budově GOTEXu.\",\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Response for calendar",
@@ -227,7 +239,7 @@
     },
     {
       "uuid": "9df8aa67-d6b5-49f6-bc46-b1bd0afa60ac",
-      "documentation": "Returns requests with all data",
+      "documentation": "",
       "method": "get",
       "endpoint": "reservation_requests/:id",
       "responses": [
@@ -338,8 +350,8 @@
         },
         {
           "uuid": "395bcc02-004f-455a-9858-c605cf235b3d",
-          "body": "{\n  \"id\": \"shongo:meetings.cesnet.cz:req:1\",\n  \"description\": \"Meeting about bachelors thesis.\",\n  \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n  \"state\": \"ALLOCATED\",\n  \"allocationState\": \"ALLOCATED\",\n  \"executableState\": \"NOT_STARTED\",\n  \"isWritable\": true,\n  \"isProvidable\": true,\n  \"notifyParticipants\": true,\n  \"ownerName\": \"Michal Drobnak\",\n  \"ownerEmail\": \"493239@muni.cz\",\n  \"slot\": {\n    \"start\": \"2021-11-04T15:30:00.000Z\",\n    \"end\": \"2021-11-04T16:30:00.000Z\"\n  },\n  \"futureSlotCount\": 1,\n  \"isDeprecated\": false,\n  \"type\": \"VIRTUAL_ROOM\",\n  \"virtualRoomData\": {\n    \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n    \"state\": \"NOT_STARTED\",\n    \"technology\": \"PEXIP\",\n    \"roomName\": \"Bachelors thesis meeting\",\n    \"roomHasRecordings\": false\n  },\n  \"authorizedData\": {\n    \"pin\": \"1234\",\n    \"adminPin\": \"5678\",\n    \"allowGuests\": true,\n    \"aliases\": [\n      {\n        \"type\": \"H323_E164\",\n        \"value\": \"(00420)950087050\"\n      },\n      {\n        \"type\": \"H323_IP\",\n        \"value\": \"78.128.216.82 050#\"\n      }\n    ]\n  },\n  \"history\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:1\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"createdBy\": \"Michal Drobnak\",\n      \"type\": \"NEW\",\n      \"allocationState\": \"ALLOCATED\",\n      \"state\": \"ALLOCATED\"\n    }\n  ]\n}",
-          "latency": 1000,
+          "body": "{\n  \"id\": \"shongo:meetings.cesnet.cz:req:1\",\n  \"description\": \"Meeting about bachelors thesis.\",\n  \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n  \"state\": \"ALLOCATED\",\n  \"allocationState\": \"ALLOCATED\",\n  \"executableState\": \"NOT_STARTED\",\n  \"isWritable\": true,\n  \"isProvidable\": true,\n  \"notifyParticipants\": true,\n  \"ownerName\": \"Michal Drobnak\",\n  \"ownerEmail\": \"493239@muni.cz\",\n  \"slot\": {\n    \"start\": \"2021-11-04T15:30:00.000Z\",\n    \"end\": \"2021-11-04T16:30:00.000Z\"\n  },\n  \"futureSlotCount\": 1,\n  \"isDeprecated\": false,\n  \"type\": \"VIRTUAL_ROOM\",\n  \"virtualRoomData\": {\n    \"roomResourceId\": \"shongo:maper-local:res:1\",\n    \"state\": \"NOT_STARTED\",\n    \"technology\": \"PEXIP\",\n    \"roomName\": \"Bachelors thesis meeting\",\n    \"roomHasRecordings\": false\n  },\n  \"authorizedData\": {\n    \"pin\": \"1234\",\n    \"adminPin\": \"5678\",\n    \"allowGuests\": true,\n    \"aliases\": [\n      {\n        \"type\": \"H323_E164\",\n        \"value\": \"(00420)950087050\"\n      },\n      {\n        \"type\": \"H323_IP\",\n        \"value\": \"78.128.216.82 050#\"\n      }\n    ]\n  },\n  \"history\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:1\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"createdBy\": \"Michal Drobnak\",\n      \"type\": \"NEW\",\n      \"allocationState\": \"ALLOCATED\",\n      \"state\": \"ALLOCATED\"\n    }\n  ]\n}",
+          "latency": 0,
           "statusCode": 200,
           "label": "Pexip (shongo:meetings.cesnet.cz:req:1)",
           "headers": [],
@@ -443,7 +455,7 @@
         },
         {
           "uuid": "2c2e406b-f1ea-48a9-9be2-3c350c05d430",
-          "body": "{\n  \"id\": \"shongo:meetings.cesnet.cz:req:11\",\n  \"description\": \"Adobe connect reservation with modified description.\",\n  \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n  \"state\": \"ALLOCATED_STARTED\",\n  \"allocationState\": \"ALLOCATED\",\n  \"executableState\": \"STARTED\",\n  \"isWritable\": true,\n  \"isProvidable\": true,\n  \"notifyParticipants\": true,\n  \"ownerName\": \"Michal Drobnak\",\n  \"ownerEmail\": \"493239@muni.cz\",\n  \"slot\": {\n    \"start\": \"2021-11-04T15:30:00.000Z\",\n    \"end\": \"2021-11-04T16:30:00.000Z\"\n  },\n  \"isDeprecated\": false,\n  \"type\": \"VIRTUAL_ROOM\",\n  \"virtualRoomData\": {\n    \"roomResourceId\": \"shongo:meetings.cesnet.cz:res:3\",\n    \"state\": \"STARTED\",\n    \"technology\": \"ADOBE_CONNECT\",\n    \"roomName\": \"Adobe connect meeting\",\n    \"roomHasRecordings\": true\n  },\n  \"authorizedData\": {\n    \"pin\": \"1234\",\n    \"userPin\": \"4789\",\n    \"allowGuests\": true,\n    \"aliases\": [\n      {\n        \"type\": \"H323_E164\",\n        \"value\": \"(00420)950087050\"\n      },\n      {\n        \"type\": \"H323_IP\",\n        \"value\": \"78.128.216.82 050#\"\n      }\n    ]\n  },\n  \"history\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:11\",\n      \"createdAt\": \"2021-11-03T19:38:09.546Z\",\n      \"createdBy\": \"Michal Drobnak\",\n      \"type\": \"MODIFIED\",\n      \"allocationState\": \"ALLOCATED\",\n      \"state\": \"ALLOCATED_STARTED\"\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:9\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"createdBy\": \"Michal Drobnak\",\n      \"type\": \"NEW\",\n      \"allocationState\": \"NOT_ALLOCATED\",\n      \"state\": \"NOT_ALLOCATED\"\n    }\n  ]\n}",
+          "body": "{\n  \"id\": \"shongo:meetings.cesnet.cz:req:11\",\n  \"description\": \"Adobe connect reservation with modified description.\",\n  \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n  \"state\": \"ALLOCATED_STARTED\",\n  \"allocationState\": \"ALLOCATED\",\n  \"executableState\": \"STARTED\",\n  \"isWritable\": true,\n  \"isProvidable\": true,\n  \"notifyParticipants\": true,\n  \"ownerName\": \"Michal Drobnak\",\n  \"ownerEmail\": \"493239@muni.cz\",\n  \"slot\": {\n    \"start\": \"2021-11-04T15:30:00.000Z\",\n    \"end\": \"2021-11-04T16:30:00.000Z\"\n  },\n  \"isDeprecated\": false,\n  \"type\": \"VIRTUAL_ROOM\",\n  \"virtualRoomData\": {\n    \"roomResourceId\": \"shongo:maper-local:res:2\",\n    \"state\": \"STARTED\",\n    \"technology\": \"ADOBE_CONNECT\",\n    \"roomName\": \"Adobe connect meeting\",\n    \"roomHasRecordings\": true\n  },\n  \"authorizedData\": {\n    \"pin\": \"1234\",\n    \"userPin\": \"4789\",\n    \"allowGuests\": true,\n    \"aliases\": [\n      {\n        \"type\": \"H323_E164\",\n        \"value\": \"(00420)950087050\"\n      },\n      {\n        \"type\": \"H323_IP\",\n        \"value\": \"78.128.216.82 050#\"\n      }\n    ]\n  },\n  \"history\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:11\",\n      \"createdAt\": \"2021-11-03T19:38:09.546Z\",\n      \"createdBy\": \"Michal Drobnak\",\n      \"type\": \"MODIFIED\",\n      \"allocationState\": \"ALLOCATED\",\n      \"state\": \"ALLOCATED_STARTED\"\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:9\",\n      \"createdAt\": \"2021-11-03T18:38:09.546Z\",\n      \"createdBy\": \"Michal Drobnak\",\n      \"type\": \"NEW\",\n      \"allocationState\": \"NOT_ALLOCATED\",\n      \"state\": \"NOT_ALLOCATED\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Adobe connect modified (shongo:meetings.cesnet.cz:req:11)",
@@ -470,7 +482,7 @@
     {
       "uuid": "cf0db812-66c4-4e8c-87b7-32e034076712",
       "documentation": "",
-      "method": "put",
+      "method": "patch",
       "endpoint": "reservation_requests/:id",
       "responses": [
         {
@@ -494,7 +506,7 @@
     },
     {
       "uuid": "48d59b57-8159-4cdf-8d5e-ad64f2ea3f4e",
-      "documentation": "Accepts reservation request, user needs to have permissions to perform this action.",
+      "documentation": "",
       "method": "post",
       "endpoint": "reservation_requests/:id/accept",
       "responses": [
@@ -519,7 +531,7 @@
     },
     {
       "uuid": "ffc40a2c-c249-4ee7-b386-0d956a1f5034",
-      "documentation": "Rejects reservation request, user needs to have permissions to perform this action.",
+      "documentation": "",
       "method": "post",
       "endpoint": "reservation_requests/:id/reject",
       "responses": [
@@ -544,7 +556,7 @@
     },
     {
       "uuid": "2978eb70-f468-4c8d-bf3f-acab58a7c997",
-      "documentation": "Deletes all requests. Works only with query for type (?type=VIRTUAL_ROOM || PHYSICAL_RESOURCE), doesn't need to work for ROOM_CAPACITY. Request may contain a body with IDs of requests, in that case delete only those reservations.",
+      "documentation": "",
       "method": "delete",
       "endpoint": "reservation_requests",
       "responses": [
@@ -577,7 +589,7 @@
           "uuid": "c4ff0133-d589-4508-b133-451d3e01f73b",
           "body": "{}",
           "latency": 0,
-          "statusCode": 200,
+          "statusCode": 401,
           "label": "",
           "headers": [],
           "filePath": "",
@@ -672,7 +684,7 @@
     },
     {
       "uuid": "9d8e37e7-6055-4df6-917e-104f30b1888a",
-      "documentation": "?userId=1430cff140c2ce0a0c6751f130af3224b80306b9@einfra.cesnet.cz&role=PRESENTER || ?name=username&email=aaa@gmail.com&role=PRESENTER",
+      "documentation": "",
       "method": "post",
       "endpoint": "reservation_requests/:id/participants",
       "responses": [
@@ -697,7 +709,7 @@
     },
     {
       "uuid": "351a7e17-2a2e-411c-a395-3fd96ae77f4f",
-      "documentation": "?role=PRESENTER",
+      "documentation": "",
       "method": "put",
       "endpoint": "reservation_requests/:objectId/participants/:participantId",
       "responses": [
@@ -753,63 +765,14 @@
       "responses": [
         {
           "uuid": "83754e0c-aa58-48d0-adc5-9017c4191d2e",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"identityType\": \"USER\",\n      \"identityPrincipalId\": \"asd51a6s5d1aw81d9aw81d9aw8d19aw81d@einfra.cesnet.cz\",\n      \"identityName\": \"Michal Drobňák\",\n      \"identityDescription\": \"Masarykova Univerzita\",\n      \"role\": \"OWNER\",\n      \"deletable\": false\n    }\n  ]\n}",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:ent:1\",\n      \"identityType\": \"USER\",\n      \"entityId\": \"asd51a6s5d1aw81d9aw81d9aw8d19aw81d@einfra.cesnet.cz\",\n      \"identityName\": \"Michal Drobňák\",\n      \"identityDescription\": \"Masarykova Univerzita\",\n      \"role\": \"OWNER\",\n      \"deletable\": true,\n      \"email\": \"493239@mail.muni.cz\"\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
-          "label": "Virtual room (shongo:meetings.cesnet.cz:req:1)",
+          "label": "Roles for all reservations",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "params",
-              "modifier": "id",
-              "value": "shongo:meetings.cesnet.cz:req:1",
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
-        },
-        {
-          "uuid": "4514377d-8489-4aa4-ad44-d8cbbdb456c0",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"identityType\": \"USER\",\n      \"identityPrincipalId\": \"asd51a6s5d1aw81d9aw81d9aw8d19aw81d@einfra.cesnet.cz\",\n      \"identityName\": \"Michal Drobňák\",\n      \"identityDescription\": \"Masarykova Univerzita\",\n      \"role\": \"OWNER\",\n      \"deletable\": false\n    }\n  ]\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Room capacity (shongo:meetings.cesnet.cz:req:2)",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "params",
-              "modifier": "id",
-              "value": "shongo:meetings.cesnet.cz:req:2",
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
-        },
-        {
-          "uuid": "8d80b3e4-ba2f-4fe7-acd9-56d2b46443e7",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"identityType\": \"USER\",\n      \"identityPrincipalId\": \"asd51a6s5d1aw81d9aw81d9aw8d19aw81d@einfra.cesnet.cz\",\n      \"identityName\": \"Michal Drobňák\",\n      \"identityDescription\": \"Masarykova Univerzita\",\n      \"role\": \"OWNER\",\n      \"deletable\": false\n    }\n  ]\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Phyisical resource (shongo:meetings.cesnet.cz:req:3)",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "params",
-              "modifier": "id",
-              "value": "shongo:meetings.cesnet.cz:req:3",
-              "operator": "equals"
-            }
-          ],
+          "rules": [],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false
@@ -871,7 +834,7 @@
     },
     {
       "uuid": "f346d09c-1990-40a5-b322-f0241ee77fc0",
-      "documentation": "Duration field is in milliseconds.",
+      "documentation": "",
       "method": "get",
       "endpoint": "reservation_requests/:id/recordings",
       "responses": [
@@ -935,7 +898,7 @@
             {
               "target": "params",
               "modifier": "id",
-              "value": "shongo:meetings.cesnet.cz:req:9",
+              "value": "shongo:meetings.cesnet.cz:req:11",
               "operator": "equals"
             },
             {
@@ -1027,7 +990,7 @@
     },
     {
       "uuid": "a7bbf248-5ee0-490f-a718-dfe60dc506ca",
-      "documentation": "Returns a photo of participant.",
+      "documentation": "",
       "method": "get",
       "endpoint": "reservation_requests/:objectId/runtime_management/participants/:participantId/snapshot",
       "responses": [
@@ -1061,7 +1024,7 @@
     },
     {
       "uuid": "cee4d8f4-ad6c-4fa7-8835-bd4207acb5cf",
-      "documentation": "Takes partial JSON data to update participant.",
+      "documentation": "",
       "method": "patch",
       "endpoint": "reservation_requests/:objectId/runtime_management/participants/:participantId",
       "responses": [
@@ -1167,7 +1130,7 @@
       "responses": [
         {
           "uuid": "740a1712-cb12-4b17-a653-156fe1d99d51",
-          "body": "[\n  {\n    \"id\": \"shongo:maper-local:res:1\",\n    \"type\": \"ROOM_PROVIDER\",\n    \"name\": \"Pexip\",\n    \"description\": \"\",\n    \"technology\": \"PEXIP\",\n    \"tags\": []\n  },\n  {\n    \"id\": \"shongo:maper-local:res:2\",\n    \"type\": \"ROOM_PROVIDER\",\n    \"name\": \"Adobe Connect\",\n    \"description\": \"\",\n    \"technology\": \"ADOBE_CONNECT\",\n    \"tags\": []\n  },\n  {\n    \"id\": \"shongo:maper-local:res:3\",\n    \"type\": \"ROOM_PROVIDER\",\n    \"name\": \"FreePBX\",\n    \"description\": \"\",\n    \"technology\": \"FREEPBX\",\n    \"tags\": []\n  },\n  {\n    \"id\": \"shongo:maper-local:res:5\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Malá zasedačka (Gotex, G318)\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  },\n  {\n    \"id\": \"shongo:maper-local:res:6\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Velká zasedačka (Gotex, G317)\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  },\n  {\n    \"id\": \"shongo:maper-local:res:6\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Klub ÚVT (Botanická, C023)\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  },\n  {\n    \"id\": \"shongo:maper-local:res:7\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Zasedačka ÚVT (Gotex, G331)\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  },\n  {\n    \"id\": \"shongo:maper-local:res:8\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Šumavská 20 - Parkovací místo\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  },\n  {\n    \"id\": \"shongo:maper-local:res:9\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Šumavská 84 - Parkovací místo\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  }\n]",
+          "body": "[\n  {\n    \"id\": \"shongo:maper-local:res:1\",\n    \"type\": \"ROOM_PROVIDER\",\n    \"name\": \"Pexip\",\n    \"description\": \"\",\n    \"technology\": \"PEXIP\",\n    \"tags\": [],\n    \"hasCapacity\": true\n  },\n  {\n    \"id\": \"shongo:maper-local:res:2\",\n    \"type\": \"ROOM_PROVIDER\",\n    \"name\": \"Adobe Connect\",\n    \"description\": \"\",\n    \"technology\": \"ADOBE_CONNECT\",\n    \"tags\": [],\n    \"hasCapacity\": true\n  },\n  {\n    \"id\": \"shongo:maper-local:res:3\",\n    \"type\": \"ROOM_PROVIDER\",\n    \"name\": \"FreePBX\",\n    \"description\": \"\",\n    \"technology\": \"FREEPBX\",\n    \"tags\": [],\n    \"hasCapacity\": true\n  },\n  {\n    \"id\": \"shongo:maper-local:res:5\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Malá zasedačka (Gotex, G318)\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  },\n  {\n    \"id\": \"shongo:maper-local:res:6\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Velká zasedačka (Gotex, G317)\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  },\n  {\n    \"id\": \"shongo:maper-local:res:6\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Klub ÚVT (Botanická, C023)\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  },\n  {\n    \"id\": \"shongo:maper-local:res:7\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Zasedačka ÚVT (Gotex, G331)\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  },\n  {\n    \"id\": \"shongo:maper-local:res:8\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Šumavská 20 - Parkovací místo\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  },\n  {\n    \"id\": \"shongo:maper-local:res:9\",\n    \"type\": \"RESOURCE\",\n    \"name\": \"Šumavská 84 - Parkovací místo\",\n    \"description\": \"\",\n    \"technology\": null,\n    \"tags\": [\"meeting-room\"]\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1188,11 +1151,11 @@
       "uuid": "39daccc3-5fde-4390-9bc3-307022d36e7e",
       "documentation": "",
       "method": "get",
-      "endpoint": "resources/capacity_utilizations",
+      "endpoint": "resources/capacity_utilization",
       "responses": [
         {
           "uuid": "4ed211b6-b3aa-44c2-a24a-295d70215dc1",
-          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"intervalFrom\": \"{{queryParam 'interval_from'}}\",\n      \"intervalTo\": \"{{queryParam 'interval_to'}}\",\n      \"resources\": [\n        {\n          \"id\": \"shongo:meetings.cesnet.cz:res:42\",\n          \"name\": \"Pexip\",\n          \"totalCapacity\": 80,\n          \"usedCapacity\": {{int 0 80}}\n        },\n        {\n          \"id\": \"shongo:meetings.cesnet.cz:res:43\",\n          \"name\": \"tcs2\",\n          \"totalCapacity\": 100,\n          \"usedCapacity\": {{int 0 100}}\n        },\n        {\n          \"id\": \"shongo:meetings.cesnet.cz:res:44\",\n          \"name\": \"connect-cesnet-new\",\n          \"totalCapacity\": 95,\n          \"usedCapacity\": {{int 0 95}}\n        },\n        {\n          \"id\": \"shongo:meetings.cesnet.cz:res:45\",\n          \"name\": \"mcu-cesnet\",\n          \"totalCapacity\": 20,\n          \"usedCapacity\": {{int 0 20}}\n        },\n        {\n          \"id\": \"shongo:meetings.cesnet.cz:res:46\",\n          \"name\": \"mcu-muni\",\n          \"totalCapacity\": 33,\n          \"usedCapacity\": {{int 0 33}}\n        },\n        {\n          \"id\": \"shongo:meetings.cesnet.cz:res:47\",\n          \"name\": \"connect-cesnet-old\",\n          \"totalCapacity\": 158,\n          \"usedCapacity\": {{int 0 158}}\n        },\n        {\n          \"id\": \"shongo:meetings.cesnet.cz:res:48\",\n          \"name\": \"FreePBX-UVT\",\n          \"totalCapacity\": 44,\n          \"usedCapacity\": {{int 0 44}}\n        }\n      ]\n    }  \n  ]\n}",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"interval\": {\n        \"start\": \"{{queryParam 'interval_from'}}\",\n        \"end\": \"{{queryParam 'interval_to'}}\"\n      },\n      \"resources\": [\n        {\n          \"id\": \"shongo:maper-local:res:1\",\n          \"name\": \"Pexip\",\n          \"totalCapacity\": 80,\n          \"usedCapacity\": {{int 0 80}}\n        },\n        {\n          \"id\": \"shongo:maper-local:res:2\",\n          \"name\": \"Adobe Connect\",\n          \"totalCapacity\": 100,\n          \"usedCapacity\": {{int 0 100}}\n        },\n        {\n          \"id\": \"shongo:maper-local:res:3\",\n          \"name\": \"FreePBX\",\n          \"totalCapacity\": 95,\n          \"usedCapacity\": {{int 0 95}}\n        }\n      ]\n    }  \n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1213,11 +1176,11 @@
       "uuid": "078d3a16-3a02-4915-949c-904990f9574a",
       "documentation": "",
       "method": "get",
-      "endpoint": "resources/:id/capacity_utilizations",
+      "endpoint": "resources/:id/capacity_utilization",
       "responses": [
         {
           "uuid": "307b1ede-49ba-4298-b654-e1e8647230fa",
-          "body": "{\n  \"id\": \"{{urlParam 'id'}}\",\n  \"name\": \"Pexip\",\n  \"intervalFrom\": \"{{queryParam 'interval_from'}}\",\n  \"intervalTo\": \"{{queryParam 'interval_to'}}\",\n  \"totalCapacity\": 80,\n  \"usedCapacity\": 2,\n  \"reservations\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:rsv:80\",\n      \"slot\": {\n        \"start\": \"2021-11-03T18:38:09.546Z\",\n        \"end\": \"2021-11-03T18:38:09.546Z\"\n      },\n      \"licenceCount\": 2,\n      \"requestId\": \"shongo:meetings.cesnet.cz:req:2\",\n      \"user\": {\n        \"id\": \"65asd65as6f51aw89f1a6s51da3s1d@einfra.cesnet.cz\",\n        \"name\": \"Michal Drobnak\",\n        \"email\": \"493239@mail.muni.cz\"\n      }\n    }\n  ]\n}",
+          "body": "{\n  \"id\": \"{{urlParam 'id'}}\",\n  \"name\": \"Pexip\",\n  \"totalCapacity\": 80,\n  \"usedCapacity\": 2,\n  \"reservations\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:rsv:80\",\n      \"slot\": {\n        \"start\": \"2021-11-03T18:38:09.546Z\",\n        \"end\": \"2021-11-03T18:38:09.546Z\"\n      },\n      \"licenseCount\": 2,\n      \"requestId\": \"shongo:meetings.cesnet.cz:req:2\",\n      \"user\": {\n        \"userId\": \"1430cff140c2ce0a0c6751f130af3224b80306b9@einfra.cesnet.cz\",\n        \"principalNames\": [\n          \"1430cff140c2ce0a0c6751f130af3224b80306b9@einfra.cesnet.cz\",\n          \"492598@muni.cz\"\n        ],\n        \"firstName\": \"Filip\",\n        \"lastName\": \"Karniš\",\n        \"organization\": \"Masarykova univerzita\",\n        \"email\": \"492598@mail.muni.cz\",\n        \"fullName\": \"Filip Karniš\",\n        \"locale\": null,\n        \"zoneInfo\": null,\n        \"eduPersonEntitlement\": [],\n        \"rootOrganization\": \"Masarykova univerzita\",\n        \"primaryEmail\": \"492598@mail.muni.cz\",\n        \"className\": \"UserInformation\"\n      }\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Pexip (shongo:meetings.cesnet.cz:res:42)",
@@ -1236,7 +1199,7 @@
     },
     {
       "uuid": "b64ded97-11b2-4ba4-94fd-875ac156514d",
-      "documentation": "Rooms are reservation requests scheduled by a scheduler, they become executables after scheduling.",
+      "documentation": "",
       "method": "get",
       "endpoint": "rooms",
       "responses": [
@@ -1317,7 +1280,7 @@
       "responses": [
         {
           "uuid": "69f40350-6d06-4ae5-9865-e63988aaa96b",
-          "body": "{\n  \"locale\": \"en\",\n  \"homeTimeZone\": \"Europe/Bratislava\",\n  \"currentTimeZone\": null,\n  \"administrationMode\": true,\n  \"permissions\": [\n    \"ADMINISTRATOR\",\n    \"OPERATOR\",\n    \"RESERVATION\"\n  ],\n  \"useWebService\": true\n}",
+          "body": "{\n  \"locale\": \"en\",\n  \"homeTimeZone\": \"Europe/Bratislava\",\n  \"currentTimeZone\": null,\n  \"administrationMode\": true,\n  \"permissions\": [\n    \"ADMINISTRATION\",\n    \"OPERATOR\",\n    \"RESERVATION\"\n  ],\n  \"useWebService\": true\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1368,7 +1331,7 @@
         {
           "uuid": "0f24b0d2-f6e7-495c-8c11-2795ed88db12",
           "body": "{}",
-          "latency": 2000,
+          "latency": 0,
           "statusCode": 200,
           "label": "",
           "headers": [],
