@@ -191,7 +191,7 @@
           "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:3\",\n      \"description\": \"A meeting room reservation.\",\n      \"createdAt\": \"2022-03-29T15:36:01.580Z\",\n      \"state\": \"CONFIRM_AWAITING\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Michal Drobnak\",\n      \"ownerEmail\": \"493239@muni.cz\",\n      \"slot\": {\n        \"start\": \"2022-03-29T04:15:00.000Z\",\n        \"end\": \"2022-03-29T05:00:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"physicalResourceData\": {\n        \"resourceId\": \"shongo:meetings.cesnet.cz:res:1\",\n        \"resourceName\": \"Malá zasedačka (Gotex, G318)\",\n        \"resourceDescription\": \"Zasedací místnost v budově GOTEXu.\",\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    }\n  ]\n}",
           "latency": 0,
           "statusCode": 200,
-          "label": "Response for calendar",
+          "label": "Reservations of G318",
           "headers": [],
           "filePath": "",
           "sendFileAsBody": false,
@@ -200,6 +200,27 @@
               "target": "query",
               "modifier": "resource",
               "value": "shongo:maper-local:res:5",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        },
+        {
+          "uuid": "f68b9716-6ac7-430b-85b2-546544de940b",
+          "body": "{\n  \"count\": 1,\n  \"items\": [\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:50\",\n      \"description\": \"Usual staff meeting\",\n      \"createdAt\": \"2022-05-16T10:45:01.580Z\",\n      \"state\": \"ALLOCATED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Filip Karniš\",\n      \"ownerEmail\": \"492598@muni.cz\",\n      \"slot\": {\n        \"start\": \"2022-05-29T15:00:00.000Z\",\n        \"end\": \"2022-05-29T18:00:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"physicalResourceData\": {\n        \"resourceId\": \"shongo:maper-local:res:6\",\n        \"resourceName\": \"Velká zasedačka (Gotex, G317)\",\n        \"resourceDescription\": \"Zasedací místnost v budově GOTEXu.\",\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    },\n    {\n      \"id\": \"shongo:meetings.cesnet.cz:req:51\",\n      \"description\": \"Meeting with business partners\",\n      \"createdAt\": \"2022-05-17T10:45:01.580Z\",\n      \"state\": \"ALLOCATED\",\n      \"isWritable\": true,\n      \"isProvidable\": true,\n      \"ownerName\": \"Filip Karniš\",\n      \"ownerEmail\": \"492598@muni.cz\",\n      \"slot\": {\n        \"start\": \"2022-05-29T19:00:00.000Z\",\n        \"end\": \"2022-05-29T20:00:00.000Z\"\n      },\n      \"isDeprecated\": false,\n      \"type\": \"PHYSICAL_RESOURCE\",\n      \"physicalResourceData\": {\n        \"resourceId\": \"shongo:maper-local:res:6\",\n        \"resourceName\": \"Velká zasedačka (Gotex, G317)\",\n        \"resourceDescription\": \"Zasedací místnost v budově GOTEXu.\",\n        \"periodicity\": {\n          \"type\": \"NONE\"\n        }\n      }\n    }\n  ]\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Reservations of G317",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "resource",
+              "value": "shongo:maper-local:res:6",
               "operator": "equals"
             }
           ],
